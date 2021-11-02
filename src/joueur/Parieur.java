@@ -1,8 +1,8 @@
-package Joueur;
+package joueur;
 
 
-import Saison.Match;
-import Saison.Pari;
+import saison.Match;
+import saison.Pari;
 
 public abstract class Parieur {
     private double bankroll;

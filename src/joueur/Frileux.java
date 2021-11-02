@@ -1,6 +1,4 @@
-package Joueur;
-
-import Joueur.Parieur;
+package joueur;
 
 public class Frileux extends Parieur {
 }

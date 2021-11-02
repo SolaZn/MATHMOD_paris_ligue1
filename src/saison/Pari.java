@@ -1,4 +1,4 @@
-package Saison;
+package saison;
 
 public class Pari {
     private Match match;

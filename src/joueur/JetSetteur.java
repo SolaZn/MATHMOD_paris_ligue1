@@ -1,7 +1,7 @@
-package Joueur;
+package joueur;
 
-import Saison.Match;
-import Saison.Pari;
+import saison.Match;
+import saison.Pari;
 
 import java.util.ArrayList;
 import java.util.Collections;
