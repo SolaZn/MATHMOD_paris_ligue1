@@ -6,6 +6,7 @@
       <change afterPath="$PROJECT_DIR$/MATHMOD_paris_ligue1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Crack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Fou.java" afterDir="false" />
@@ -15,9 +16,12 @@
       <change beforePath="$PROJECT_DIR$/src/joueur/Parieur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Parieur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Professor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Technicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Technicien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saison/Choix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Choix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saison/Journee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Journee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/saison/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Match.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/saison/Pari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Pari.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/saison/Resultat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saison/Saison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Saison.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635906798336</updated>
-      <workItem from="1635906800183" duration="3477000" />
+      <workItem from="1635906800183" duration="11416000" />
     </task>
     <servers />
   </component>
@@ -84,5 +88,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/saison/Choix.java</url>
+          <line>5</line>
+          <properties class="saison.Choix" method="bind">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
