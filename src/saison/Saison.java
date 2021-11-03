@@ -21,6 +21,8 @@ public class Saison {
             Scanner sc = new Scanner(fichierCSVsaison);
             sc.nextLine();
 
+            System.out.println("Importation des matchs en cours depuis \n" + cheminCSV);
+
             while(sc.hasNextLine()){
                 nombreMatchs++;
                 String[] match = sc.nextLine().split(";");
@@ -41,7 +43,25 @@ public class Saison {
             }
             sc.close();
 
+            System.out.println("Importation des matchs terminée");
+            System.out.println("Création des journées en cours");
+
+
             // étape 2 : créer des journees à partir des matchs
+            for (int i = 1; i <= nombreJournee; i++) {
+                Journee J = new Journee(i);
+                for(int y = 0; y < listeMatchs.size(); y++){
+                    Match match = listeMatchs.get(y);
+                    if (match.getJournee().equals("J" + i)){
+                        J.addMatch(match);
+                        listeMatchs.remove(match);
+                    }
+                }
+                System.out.println(J);
+            }
+
+            System.out.println("Création des journées terminée");
+
 
         }catch(Exception e){
             e.printStackTrace();

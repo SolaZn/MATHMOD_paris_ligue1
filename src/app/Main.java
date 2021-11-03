@@ -28,6 +28,6 @@ public class Main {
         Pari pari2 = frileux.parier(match);*/
 
         Saison saison = new Saison();
-        saison.lancerSaison("D:\\DUT_IFO2\\cours-s1\\MATHS\\ModelisationsMathematiques\\MATHMOD_saison_LIGUE1\\MATHMOD_paris_ligue1\\jeu_donnees_ligue1_reel.csv", 1);
+        saison.lancerSaison("D:\\DUT_IFO2\\cours-s1\\MATHS\\ModelisationsMathematiques\\MATHMOD_saison_LIGUE1\\MATHMOD_paris_ligue1\\jeu_donnees_ligue1_reel.csv", 37);
     }
 }
