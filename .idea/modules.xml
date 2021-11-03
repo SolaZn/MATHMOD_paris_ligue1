@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MATHMOD_saison_LIGUE1.iml" filepath="$PROJECT_DIR$/MATHMOD_saison_LIGUE1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MATHMOD_paris_ligue1.iml" filepath="$PROJECT_DIR$/MATHMOD_paris_ligue1.iml" />
     </modules>
   </component>
 </project>

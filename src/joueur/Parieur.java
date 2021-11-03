@@ -5,8 +5,10 @@ import saison.Match;
 import saison.Pari;
 
 public abstract class Parieur {
-    private double bankroll;
-    private double gain;
+    double bankroll;
+    double gain;
+    static final double GROSSECOTE = 2.5;
+    static final double PETITECOTE = 1.2;
     //private double gainTotal; // pour récupérer tous les gains.
     //gain a la journée
     // gain mensuel

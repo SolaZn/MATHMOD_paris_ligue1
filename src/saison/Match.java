@@ -4,14 +4,13 @@ import java.util.ArrayList;
 
 public class Match {
     private int idMatch;
-    private double coteH, coteD, coteA;
-    private Resultat resultat;
+    private ArrayList<Double> cotes;
+    private Choix resultat;
 
-    public Match(int idMatch, ArrayList<Double> cotesMatch, Resultat resultat){
+    public Match(int idMatch, ArrayList<Double> cotesMatch, Choix resultat){
         this.idMatch = idMatch;
-        this.coteH = cotesMatch.get(0);
-        this.coteD = cotesMatch.get(1);
-        this.coteA = cotesMatch.get(2);
+        cotes = new ArrayList<>();
+        cotes.addAll(cotesMatch);
         this.resultat = resultat;
     }
 
@@ -20,12 +19,19 @@ public class Match {
     }
 
     public ArrayList<Double> getCotes(){
-        ArrayList<Double> cotesMatch = new ArrayList<>();
-        cotesMatch.add(coteH);
-        cotesMatch.add(coteD);
-        cotesMatch.add(coteA);
+        return cotes;
+    }
 
-        return cotesMatch;
+    public Choix getChoixbyCote(double coteChoisie){
+        if(cotes.get(0) == coteChoisie){
+            return Choix.H;
+        }else if (cotes.get(1) == coteChoisie){
+            return Choix.D;
+        }else if (cotes.get(2) == coteChoisie){
+            return Choix.A;
+        }
+
+        return Choix.H;
     }
 
 

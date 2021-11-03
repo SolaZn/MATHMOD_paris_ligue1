@@ -6,7 +6,7 @@ public class Pari {
     private Choix equipe;
 
     public Pari(Match match, double mise, Choix equipe){
-
+        System.out.println(match + " " + mise + " " + equipe);
     }
 
 
