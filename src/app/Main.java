@@ -2,6 +2,7 @@ package app;
 
 import joueur.*;
 import saison.Saison;
+import sun.security.krb5.internal.PaPacOptions;
 
 import java.util.ArrayList;
 
@@ -13,14 +14,16 @@ public class Main {
         // on instancie les profils de joueurs
         JetSetteur jet = new JetSetteur();
         Frileux frileux = new Frileux();
-        Chauvin chauvin = new Chauvin("Lille");
+        Chauvin chauvin = new Chauvin("Metz");
         Fou fou = new Fou();
+        Professor prof = new Professor();
 
         // on les ajoute à la liste des joueurs
-        listeJoueurs.add(jet);
-        listeJoueurs.add(frileux);
-        listeJoueurs.add(chauvin);
-        listeJoueurs.add(fou);
+        //listeJoueurs.add(jet);
+        //listeJoueurs.add(frileux);
+        //listeJoueurs.add(chauvin);
+        //listeJoueurs.add(fou);
+        listeJoueurs.add(prof);
         // on crée une nouvelle saison
         Saison saison = new Saison();
         // on lance la saison, avec le CSV des matchs, le nombre de Journées voulues et la liste des joueurs

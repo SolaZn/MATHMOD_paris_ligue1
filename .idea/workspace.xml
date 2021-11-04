@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3ec0fe43-e58b-494a-bbdd-a9ac4b794ed7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeu_donnees_ligue1_reel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/jeu_donnees_ligue1_reel.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/app/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Fou.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Parieur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Parieur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Professor.java" afterDir="false" />
     </list>
+    <list id="36152cd8-0ca0-4ac2-8f99-7f06d7ba709a" name="Changes by zakan" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
