@@ -10,7 +10,7 @@ public class Saison {
     private ArrayList<Journee> journees;
 
     public Saison(){
-        this.journees = new ArrayList<>();
+        this.journees = new ArrayList<>();  
     }
 
     // fonctions d'initalisation de la simulation

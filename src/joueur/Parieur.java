@@ -83,7 +83,7 @@ nbNul=0;
             System.out.println(this.getClass().getSimpleName() + " gagnant");
             nombreParisGagnes++;
         } else{
-            System.out.println(this.getClass().getSimpleName() + " perdant");
+            System.out  .println(this.getClass().getSimpleName() + " perdant");
             nombreParisPerdus++;
         }
         // ajouter les idées de la fct au dessus
