@@ -6,11 +6,9 @@ import saison.Choix;
 
 public class Chauvin extends Parieur {
     private String equipeFav;
-    public int mise;
 
     public Chauvin(String nomEquipe){
         equipeFav = nomEquipe;
-        mise = 10;
     }
 
 
@@ -34,14 +32,14 @@ public class Chauvin extends Parieur {
 
         if(equipe == Choix.H){
             coteChoisie = match.getCotes().get(0);
-            setBankroll(mise);
+            setBankroll(MISEMOYENNE);
             nombreParisEffectues++;
-            return new Pari(match,mise,Choix.H,this, coteChoisie);
+            return new Pari(this, match, Choix.H, coteChoisie, MISEMOYENNE);
         } else if(equipe == Choix.A){
             coteChoisie = match.getCotes().get(2);
-            setBankroll(mise);
+            setBankroll(MISEMOYENNE);
             nombreParisEffectues++;
-            return new Pari(match,mise,Choix.A,this,coteChoisie);
+            return new Pari(this, match, Choix.A, coteChoisie, MISEMOYENNE);
         }
         return null;
     }

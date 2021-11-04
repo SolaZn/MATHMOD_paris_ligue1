@@ -38,14 +38,17 @@ public class JetSetteur extends Parieur {
         int temp = (int)(mise*100.0);
         mise = ((double)temp)/100.0;*/
 
-        double mise = bankroll * 0.15;
+        /* double mise = bankroll * 0.15;*/
+
+        double mise = MISEMOYENNE;
+
         if(mise < 1  || bankroll < 0){
             if(idJourneeSansleSou.equals("")){
                 idJourneeSansleSou = match.getJournee();
             }
             System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
             System.out.println("Pas assez d'argent... Mise refusée");
-            System.out.println(this.getClass().getSimpleName() + " est à sec " + this.idJourneeSansleSou);
+            System.out.println(this.getClass().getSimpleName() + " est à sec depuis la " + this.idJourneeSansleSou);
             return null;
         }
 
@@ -56,7 +59,7 @@ public class JetSetteur extends Parieur {
         }else{
             setBankroll(mise);
             nombreParisEffectues++;
-            return new Pari(match, mise, match.getChoixbyCote(coteChoisie), this, coteChoisie);
+            return new Pari(this, match, match.getChoixbyCote(coteChoisie), coteChoisie, mise);
         }
     }
 }

@@ -52,7 +52,7 @@ public class Frileux extends Parieur {
         }else {
             setBankroll(mise);
             nombreParisEffectues++;
-            return new Pari(match, mise, match.getChoixbyCote(coteChoisie), this, coteChoisie);
+            return new Pari(this, match, match.getChoixbyCote(coteChoisie), coteChoisie, mise);
         }
     }
 }

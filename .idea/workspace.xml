@@ -87,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635906798336</updated>
-      <workItem from="1635906800183" duration="27012000" />
+      <workItem from="1635906800183" duration="30117000" />
     </task>
     <servers />
   </component>
@@ -104,19 +104,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/saison/Match.java</url>
-          <line>81</line>
-          <properties class="saison.Match" method="bilanParis">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

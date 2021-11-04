@@ -9,7 +9,7 @@ public class Pari {
     private double cote;
     private Parieur parieur;
 
-    public Pari(Match match, double mise, Choix equipe, Parieur parieur, double cote){
+    public Pari(Parieur parieur, Match match, Choix equipe, double cote, double mise){
         this.match = match;
         this.mise = mise;
         this.equipe = equipe;

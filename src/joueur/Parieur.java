@@ -13,12 +13,14 @@ public abstract class Parieur {
     double gain;
     static final double GROSSECOTE = 2.5;
     static final double PETITECOTE = 1.3; // est passée de 1.2 à 1.5 parce que pas assez dans notre jeu de données
+    static final double MISEMOYENNE = 11.;
+
     //private double gainTotal; // pour récupérer tous les gains.
     //gain a la journée
     // gain mensuel
     //gain par match
     // on fait un tableau
-    //compteur paris effectués
+
     int nombreParisEffectues;
     int nombreParisPerdus;
     int nombreParisGagnes;

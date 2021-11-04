@@ -57,7 +57,7 @@ public class Saison {
                     if (match.getJournee().equals("J" + i)){
                         J.addMatch(match);
                         listeMatchs.remove(match);
-                        y-= 1;
+                        y -= 1; // on décale la recherche pour éviter de sauter le match qui a repris l'id du supprimé
                     }
                 }
                 System.out.println(J);
@@ -73,23 +73,25 @@ public class Saison {
         }
     }
 
+    // fonction de simulation de la saison
     private void simulerSaison(Journee journee, ArrayList<Parieur> listeJoueurs) {
         for(Match match : journee.getMatchs()){
             for (Parieur parieur : listeJoueurs) {
+                // 1 : on donne chaque match au parieur pour qu'il parie
                 Pari pariEffectue = parieur.parier(match);
                 System.out.println(pariEffectue);
 
+                // 2 : s'il parie, on enregistre son pari dans la liste des paris du match
                 if(pariEffectue != null)
                     match.getParis().add(pariEffectue);
             }
+            // 3 : une fois que tous les parieurs ont parié, on fait le bilan de leur performance
+            // en fonction du résultat du match
             match.bilanParis();
-        }
-
-        for(Parieur parieur : listeJoueurs){
-            parieur.bilanSaison();
         }
     }
 
+    // boucle principale
     public boolean lancerSaison(String cheminCSV, int nombreJournee, ArrayList<Parieur> listeJoueurs){
         // 1: on initialise les journees
         initialiserJournees(cheminCSV, nombreJournee);
@@ -97,6 +99,11 @@ public class Saison {
         // 2: on lance la simulation
         for(Journee journee : journees) {
             simulerSaison(journee, listeJoueurs);
+        }
+
+        // 3 : on fait le bilan de la saison
+        for(Parieur parieur : listeJoueurs){
+            parieur.bilanSaison();
         }
 
         return false;

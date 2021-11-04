@@ -35,6 +35,8 @@ public class Match {
     }
 
     public ArrayList<Double> getCotes(){
+        // pour des raisons pratiques, on exploitera que les cotesAVG, à part éventuellement pour le profil Technicien qui
+        // a besoin d'un large choix de cotes
         return cotesAVG;
     }
 
@@ -46,8 +48,7 @@ public class Match {
         }else if (cotesAVG.get(2) == coteChoisie){
             return Choix.A;
         }
-
-        return Choix.H;
+        return null;
     }
 
     public String getJournee() {
