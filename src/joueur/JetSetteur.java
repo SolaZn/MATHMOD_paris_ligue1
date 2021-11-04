@@ -15,6 +15,10 @@ public class JetSetteur extends Parieur {
     public Pari parier(Match match){
         ArrayList<Double> cotesMatch = new ArrayList<>();
         cotesMatch.addAll(match.getCotes());
+
+        // on calcule le TRJ du pari
+        double TRJPari = calculTRJ(cotesMatch);
+
         Collections.sort(cotesMatch);
         Double coteChoisie = cotesMatch.get(2); // on récupère la dernière valeur, qui équivaut à la plus grosse
 
@@ -22,9 +26,14 @@ public class JetSetteur extends Parieur {
         // sur les matches qui ont de grosses cotes (et pas seulement la plus grosse de chaque match)
         int MisePari = 10;
 
+        double mise;
+        
+
+
         if(coteChoisie <= Parieur.GROSSECOTE){
             return null;
         }else
-            return new Pari(match, MisePari, match.getChoixbyCote(coteChoisie));
+            // mettre à jour la bankroll
+            return new Pari(match, mise, match.getChoixbyCote(coteChoisie), this, coteChoisie);
     }
 }

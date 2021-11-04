@@ -1,5 +1,7 @@
 package saison;
 
+import joueur.Parieur;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -55,9 +57,11 @@ public class Saison {
                     if (match.getJournee().equals("J" + i)){
                         J.addMatch(match);
                         listeMatchs.remove(match);
+                        y-= 1;
                     }
                 }
                 System.out.println(J);
+                journees.add(J);
             }
 
             System.out.println("Création des journées terminée");
@@ -69,10 +73,22 @@ public class Saison {
         }
     }
 
-    public boolean lancerSaison(String cheminCSV, int nombreJournee){
+    private void simulerSaison(Journee journee, ArrayList<Parieur> listeJoueurs) {
+        for(Match match : journee.getMatchs()){
+            for (Parieur parieur : listeJoueurs) {
+                System.out.println(parieur.parier(match));
+            }
+        }
+    }
+
+    public boolean lancerSaison(String cheminCSV, int nombreJournee, ArrayList<Parieur> listeJoueurs){
         // 1: on initialise les journees
         initialiserJournees(cheminCSV, nombreJournee);
 
+        // 2: on lance la simulation
+        for(Journee journee : journees) {
+            simulerSaison(journee, listeJoueurs);
+        }
 
         return false;
     }

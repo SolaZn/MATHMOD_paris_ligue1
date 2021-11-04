@@ -65,4 +65,11 @@ public class Match {
                 '}';
     }
 
+    public String getDescMatch() {
+        return this.equipes[0] + " contre " + this.equipes[1] + " le " + date;
+    }
+
+    public String[] getEquipes() {
+        return equipes;
+    }
 }

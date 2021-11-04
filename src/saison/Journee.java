@@ -26,4 +26,8 @@ public class Journee {
                 ", matches=" + matches +
                 '}';
     }
+
+    public ArrayList<Match> getMatchs() {
+        return matches;
+    }
 }
