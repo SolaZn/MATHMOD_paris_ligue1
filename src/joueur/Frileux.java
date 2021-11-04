@@ -20,14 +20,39 @@ public class Frileux extends Parieur {
         Collections.sort(cotesMatch);
         Double coteChoisie = cotesMatch.get(0); // on récupère la première valeur, qui équivaut à la plus petite
 
-        int MisePari = 10;
+        /* double critere = pariOptimalparKelly(coteChoisie, TRJPari);
+        double mise = critere * bankroll;
 
-        double mise = pariOptimalparKelly(coteChoisie, TRJPari) * bankroll;
+        // si l'application du critère de Kelly renvoie un nombre négatif -> pari risqué -> renvoi d'une valeur correspondant à la moyenne des joueurs
+        double coefMoyenBankroll = 0.025;
+        while(mise < 1){
+            mise = coefMoyenBankroll * bankroll;
+            coefMoyenBankroll += 0.01;
+        }
+
+        int temp = (int)(mise*100.0);
+        mise = ((double)temp)/100.0; */
+
+        double mise = bankroll * 0.025;
+        if(mise < 1  || bankroll < 0){
+            if(idJourneeSansleSou.equals("")){
+                idJourneeSansleSou = match.getJournee();
+            }
+            System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
+            System.out.println("Pas assez d'argent... Mise refusée");
+            System.out.println(this.getClass().getSimpleName() + " est à sec " + this.idJourneeSansleSou);
+            return null;
+        }
 
 
         if(coteChoisie > Parieur.PETITECOTE){
+            System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
+            System.out.println("Cote trop risquée pour " + this.getClass().getSimpleName());
             return null;
-        }else
+        }else {
+            setBankroll(mise);
+            nombreParisEffectues++;
             return new Pari(match, mise, match.getChoixbyCote(coteChoisie), this, coteChoisie);
+        }
     }
 }

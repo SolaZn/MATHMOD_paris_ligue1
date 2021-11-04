@@ -34,9 +34,13 @@ public class Chauvin extends Parieur {
 
         if(equipe == Choix.H){
             coteChoisie = match.getCotes().get(0);
+            setBankroll(mise);
+            nombreParisEffectues++;
             return new Pari(match,mise,Choix.H,this, coteChoisie);
         } else if(equipe == Choix.A){
             coteChoisie = match.getCotes().get(2);
+            setBankroll(mise);
+            nombreParisEffectues++;
             return new Pari(match,mise,Choix.A,this,coteChoisie);
         }
         return null;

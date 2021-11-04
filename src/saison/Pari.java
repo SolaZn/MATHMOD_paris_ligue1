@@ -22,4 +22,20 @@ public class Pari {
     public String toString() {
         return "Le pari" + " est de " + parieur.getClass().getSimpleName() + " et concerne le match " + this.match.getDescMatch() + "; Mise : " + mise + " euros sur " + equipe + ", cote : " + cote;
     }
+
+    public Parieur getParieur() {
+        return this.parieur;
+    }
+
+    public Choix getEquipe() {
+        return equipe;
+    }
+
+    public double getMise() {
+        return this.mise;
+    }
+
+    public double getCote() {
+        return this.cote;
+    }
 }

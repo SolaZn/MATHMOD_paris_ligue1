@@ -76,8 +76,17 @@ public class Saison {
     private void simulerSaison(Journee journee, ArrayList<Parieur> listeJoueurs) {
         for(Match match : journee.getMatchs()){
             for (Parieur parieur : listeJoueurs) {
-                System.out.println(parieur.parier(match));
+                Pari pariEffectue = parieur.parier(match);
+                System.out.println(pariEffectue);
+
+                if(pariEffectue != null)
+                    match.getParis().add(pariEffectue);
             }
+            match.bilanParis();
+        }
+
+        for(Parieur parieur : listeJoueurs){
+            parieur.bilanSaison();
         }
     }
 

@@ -11,6 +11,7 @@ public class Match {
     private String date;
     private String[] equipes;
     private Choix resultat;
+    private ArrayList<Pari> listeParis;
 
     public Match(int idMatch, String Journee, String date, String[] equipes, ArrayList<Double> cotesMAX, ArrayList<Double> cotesAVG, Choix resultat){
         this.idMatch = idMatch;
@@ -21,6 +22,7 @@ public class Match {
 
         this.cotesMAX = new ArrayList<>();
         this.cotesAVG = new ArrayList<>();
+        this.listeParis = new ArrayList<>();
 
         this.cotesMAX.addAll(cotesMAX);
         this.cotesAVG.addAll(cotesAVG);
@@ -71,5 +73,15 @@ public class Match {
 
     public String[] getEquipes() {
         return equipes;
+    }
+
+    public ArrayList<Pari> getParis() {
+        return this.listeParis;
+    }
+
+    public void bilanParis() {
+        for (Pari pari : listeParis) {
+            pari.getParieur().bilanPari(pari, this.resultat);
+        }
     }
 }

@@ -4,11 +4,11 @@
     <list default="true" id="3ec0fe43-e58b-494a-bbdd-a9ac4b794ed7" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MATHMOD_paris_ligue1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/joueur/Chauvin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Chauvin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Chauvin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Crack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Fou.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Frileux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Frileux.java" afterDir="false" />
@@ -87,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635906798336</updated>
-      <workItem from="1635906800183" duration="21411000" />
+      <workItem from="1635906800183" duration="27012000" />
     </task>
     <servers />
   </component>
@@ -108,11 +108,13 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="match.idMatch == 8" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/joueur/Frileux.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="33" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/saison/Match.java</url>
+          <line>81</line>
+          <properties class="saison.Match" method="bilanParis">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
