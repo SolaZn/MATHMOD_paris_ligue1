@@ -2,30 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec0fe43-e58b-494a-bbdd-a9ac4b794ed7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MATHMOD_paris_ligue1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeu_donnees_ligue1_reel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/jeu_donnees_ligue1_reel.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/app/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Chauvin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Chauvin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Crack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Fou.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Frileux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Frileux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/IJoueur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/JetSetteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/JetSetteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Kelly.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Parieur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Parieur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Technicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Technicien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/BilanJournee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Choix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Choix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/ISaison.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Journee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Journee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Pari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Pari.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Resultat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Saison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Saison.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +40,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elyes\Documents\IdeaProjects\MATHMOD_paris_ligue1\src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -104,5 +91,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

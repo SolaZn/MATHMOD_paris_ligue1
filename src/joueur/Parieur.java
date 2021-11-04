@@ -24,12 +24,16 @@ public abstract class Parieur {
     int nombreParisEffectues;
     int nombreParisPerdus;
     int nombreParisGagnes;
+    int nbAway;
+    int nbHome;
     String idJourneeSansleSou;
+    int nbNul;
 
     public Parieur(){
         this.bankroll = MONTANTBANKROLL;
         this.gain = 0;
-
+        nbAway=0;nbHome=0;
+nbNul=0;
         this.nombreParisEffectues = 0;
         this.nombreParisGagnes = 0;
         this.nombreParisPerdus = 0;
@@ -94,6 +98,10 @@ public abstract class Parieur {
         System.out.println(this.getClass().getSimpleName() + " a gagné " + nombreParisGagnes + " paris");
         System.out.println(this.getClass().getSimpleName() + " a perdu " + nombreParisPerdus + " paris");
         System.out.print(this.getClass().getSimpleName() + " a tenu jusqu'à la ");
+        System.out.println("La bankroll est de : " + getBankroll());
+        System.out.println("Il a fait " +nbNul + " paris nul");
+        System.out.println("Il a fait " +nbHome + " paris home");
+        System.out.println("Il a fait " +nbAway + " paris away");
         if(idJourneeSansleSou == ""){
             System.out.print("fin\n");
         }else
