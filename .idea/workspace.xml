@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec0fe43-e58b-494a-bbdd-a9ac4b794ed7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/app/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Chauvin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Chauvin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Crack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Crack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Fou.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Fou.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Frileux.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Frileux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/JetSetteur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/JetSetteur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Parieur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Parieur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Professor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Technicien.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Technicien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Match.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Pari.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Pari.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Saison.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Saison.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Chauvin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Chauvin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Crack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Fou.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Frileux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Frileux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/JetSetteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/JetSetteur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Parieur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Parieur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Technicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Technicien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Pari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Pari.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saison/Saison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Saison.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +88,7 @@
       <workItem from="1636173538083" duration="137000" />
       <workItem from="1636173696734" duration="1295000" />
       <workItem from="1636301599783" duration="1377000" />
-      <workItem from="1636403483470" duration="10509000" />
+      <workItem from="1636403483470" duration="10576000" />
     </task>
     <servers />
   </component>

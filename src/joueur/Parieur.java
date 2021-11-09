@@ -170,10 +170,10 @@ public abstract class Parieur {
         System.out.println("Il a généré un gain brut de : " + nombre.format(getGainBrut()) + " euros");
         System.out.println("... sur un montant total misé de : " + nombre.format(getTotalMises()) + " euros");
 
-        // compter le nombre de fois que le ROI dépasse 5% sur plusieurs saisons pour voir quel est le profil le plus intéressant
+        //TODO: // compter le nombre de fois que le ROI dépasse 5% sur plusieurs saisons pour voir quel est le profil le plus intéressant
         // https://www.comment-gagner-paris-sportifs.fr/le-roi-dans-les-paris-sportifs/
 
-        // simuler plusieurs saisons d'un coup
+        //TODO: sortie vers CSV des données à la journée et à la saison
     }
 
     private double getTotalMises() {
