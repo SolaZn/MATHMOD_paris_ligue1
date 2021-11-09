@@ -5,10 +5,15 @@ import saison.Choix;
 import saison.Match;
 import saison.Pari;
 
+import java.io.FileWriter;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public abstract class Parieur {
+    private static final String DELIMITEUR = ",";
+    private static final String SEPARATEUR = "\n";
+    private static final String CHAMPS = "Bankroll,Gain brut,Gain moyen,Total des mises, bénéfice, ROC, ROI,Journée d'arrêt,Victoires," +
+            "Défaites,Effectués,Pari domicile,Pari nul,Pari extérieur";
 
     double bankroll;
     double gainBrut;
@@ -192,5 +197,46 @@ public abstract class Parieur {
 
     public double getBankroll() {
         return bankroll;
+    }
+
+    public void export(String saison) {
+        String nomFichier = this.getClass().getSimpleName() +".csv";
+        FileWriter file;
+        try
+        {
+            file = new FileWriter(nomFichier);
+            if(lignesEcrites = 0) {
+                //Ajouter l'en-tête
+                file.append(CHAMPS);
+            }
+            //Ajouter une nouvelle ligne après l'en-tête
+            file.append(SEPARATEUR);
+            file.append(this.getClass().getSimpleName());
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(bankroll));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(gainBrut));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(gainMatch));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(totalMises));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(bénéfice));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(evolutionCapital));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(ROI));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(idJourFin)); // TODO: mettre J38 si pas de fin + changer le code qui vérifie les journées psk pas bon avec shuffle journees
+            //TODO: ajouter le reste des champs
+            file.append(SEPARATOR);
+
+            file.close();
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
     }
 }

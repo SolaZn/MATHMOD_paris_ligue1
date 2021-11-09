@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ec0fe43-e58b-494a-bbdd-a9ac4b794ed7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/joueur/Parieur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Parieur.java" afterDir="false" />
-    </list>
+    <list default="true" id="3ec0fe43-e58b-494a-bbdd-a9ac4b794ed7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +86,7 @@
       <workItem from="1636173538083" duration="137000" />
       <workItem from="1636173696734" duration="1295000" />
       <workItem from="1636301599783" duration="1377000" />
-      <workItem from="1636403483470" duration="10576000" />
+      <workItem from="1636403483470" duration="10593000" />
     </task>
     <servers />
   </component>

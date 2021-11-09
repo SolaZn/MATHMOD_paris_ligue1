@@ -74,6 +74,10 @@ public class Saison {
         }
     }
 
+    private void exporterDonnees(Parieur parieur, int nbSaison){
+        parieur.export("Saison");
+    }
+
     // fonction de simulation de la saison
     private void simulerMatchs(Journee journee, ArrayList<Parieur> listeJoueurs) {
         for(Match match : journee.getMatchs()){
