@@ -30,6 +30,10 @@ public class Match {
         this.resultat = resultat;
     }
 
+    public void resetMatch(){
+         listeParis = new ArrayList<>();
+    }
+
     public Match getMatch(){
         return this;
     }

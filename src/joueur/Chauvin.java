@@ -30,15 +30,25 @@ public class Chauvin extends Parieur {
         double coteChoisie;
         Choix equipe = choixParEquipe(match);
 
+        if(bankroll - MISEMOYENNE < DECOUVERTAUTORISE){
+            if(idJourFin.equals("")){
+                idJourFin = match.getJournee();
+            }
+            /*System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
+            System.out.println("Pas assez d'argent... Mise refusée");
+            System.out.println(this.getClass().getSimpleName() + " est à sec " + this.idJourFin);*/
+            return null;
+        }
+
         if(equipe == Choix.H){
             coteChoisie = match.getCotes().get(0);
             setBankroll(MISEMOYENNE);
-            nombreParisEffectues++;
+            nbEff++;
             return new Pari(this, match, Choix.H, coteChoisie, MISEMOYENNE);
         } else if(equipe == Choix.A){
             coteChoisie = match.getCotes().get(2);
             setBankroll(MISEMOYENNE);
-            nombreParisEffectues++;
+            nbEff++;
             return new Pari(this, match, Choix.A, coteChoisie, MISEMOYENNE);
         }
         return null;

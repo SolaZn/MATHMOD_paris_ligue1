@@ -4,6 +4,7 @@ import joueur.Parieur;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Saison {
@@ -74,16 +75,20 @@ public class Saison {
     }
 
     // fonction de simulation de la saison
-    private void simulerSaison(Journee journee, ArrayList<Parieur> listeJoueurs) {
+    private void simulerMatchs(Journee journee, ArrayList<Parieur> listeJoueurs) {
         for(Match match : journee.getMatchs()){
             for (Parieur parieur : listeJoueurs) {
                 // 1 : on donne chaque match au parieur pour qu'il parie
                 Pari pariEffectue = parieur.parier(match);
-                System.out.println(pariEffectue);
-
                 // 2 : s'il parie, on enregistre son pari dans la liste des paris du match
                 if(pariEffectue != null)
-                    match.getParis().add(pariEffectue);
+                    if(!pariEffectue.getIsSurebet()){
+                        match.getParis().add(pariEffectue);
+                    }else{
+                        for (Pari pari: pariEffectue.getListeParisSurebet()) {
+                            match.getParis().add(pari);
+                        }
+                    }
             }
             // 3 : une fois que tous les parieurs ont parié, on fait le bilan de leur performance
             // en fonction du résultat du match
@@ -91,19 +96,41 @@ public class Saison {
         }
     }
 
-    // boucle principale
-    public boolean lancerSaison(String cheminCSV, int nombreJournee, ArrayList<Parieur> listeJoueurs){
-        // 1: on initialise les journees
-        initialiserJournees(cheminCSV, nombreJournee);
-
+    private void simulerSaison(ArrayList<Parieur> listeJoueurs) {
         // 2: on lance la simulation
         for(Journee journee : journees) {
-            simulerSaison(journee, listeJoueurs);
+            simulerMatchs(journee, listeJoueurs);
         }
 
         // 3 : on fait le bilan de la saison
         for(Parieur parieur : listeJoueurs){
             parieur.bilanSaison();
+        }
+    }
+
+    // boucle principale
+    public boolean lancerSaison(String cheminCSV, int nombreJournee, ArrayList<Parieur> listeJoueurs, int nbSaisons){
+        // 1: on initialise les journees
+        initialiserJournees(cheminCSV, nombreJournee);
+
+        System.out.println("---- SAISON 1 ----");
+        simulerSaison(listeJoueurs);
+        for(int i = 1; i < nbSaisons; i++){
+            System.out.println();
+            System.out.println("SAISON " + (i+1) + " ----");
+            Collections.shuffle(journees);
+
+            for (Parieur parieur: listeJoueurs) {
+                parieur.resetParieur();
+            }
+
+            for(Journee journee : journees){
+                for (Match match: journee.getMatchs()) {
+                    match.resetMatch();
+                }
+            }
+
+            simulerSaison(listeJoueurs);
         }
 
         return false;

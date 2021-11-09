@@ -4,10 +4,30 @@
     <list default="true" id="3ec0fe43-e58b-494a-bbdd-a9ac4b794ed7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/app/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Chauvin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Chauvin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Crack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Crack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Fou.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Fou.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Frileux.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Frileux.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/JetSetteur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/JetSetteur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Parieur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Parieur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Professor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Technicien.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/joueur/Technicien.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Match.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Pari.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Pari.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Saison.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MATHMOD_paris_ligue1/saison/Saison.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Chauvin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Chauvin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Crack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Fou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Fou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Frileux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Frileux.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/JetSetteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/JetSetteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Parieur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Parieur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/joueur/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Technicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Technicien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saison/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saison/Pari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Pari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saison/Saison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/saison/Saison.java" afterDir="false" />
     </list>
-    <list id="36152cd8-0ca0-4ac2-8f99-7f06d7ba709a" name="Changes by zakan" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +43,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/joueur/Parieur.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/joueur/Crack.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/joueur/JetSetteur.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/joueur/Professor.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/joueur/Technicien.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/joueur/Frileux.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/joueur/Fou.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/saison/Choix.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/saison/Match.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/saison/Pari.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/saison/Journee.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/saison/Saison.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="20ODZccolIY7lIr7fexk6WJ58dN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,12 +68,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="app.teamhub.trackedBranches" value="-6r47kb/master" />
+    <property name="app.teamhub.trackedBranches" value="-6r47kb/branche-elyes,-6r47kb/master" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -74,6 +109,10 @@
       <option name="presentableId" value="Default" />
       <updated>1635906798336</updated>
       <workItem from="1635906800183" duration="30117000" />
+      <workItem from="1636173538083" duration="137000" />
+      <workItem from="1636173696734" duration="1295000" />
+      <workItem from="1636301599783" duration="1377000" />
+      <workItem from="1636403483470" duration="10509000" />
     </task>
     <servers />
   </component>
@@ -91,5 +130,12 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="journees" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

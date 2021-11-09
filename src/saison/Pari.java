@@ -2,6 +2,8 @@ package saison;
 
 import joueur.Parieur;
 
+import java.util.ArrayList;
+
 public class Pari {
     private Match match;
     private double mise;
@@ -9,13 +11,22 @@ public class Pari {
     private double cote;
     private Parieur parieur;
 
+    private Pari[] listeParisSurebet;
+    private boolean isSurebet;
+
     public Pari(Parieur parieur, Match match, Choix equipe, double cote, double mise){
         this.match = match;
         this.mise = mise;
         this.equipe = equipe;
         this.cote = cote;
+        this.isSurebet = false;
 
         this.parieur = parieur;
+    }
+
+    public Pari(Pari pari1, Pari pari2, Pari pari3){
+        this.listeParisSurebet = new Pari[]{pari1, pari2, pari3};
+        this.isSurebet = true;
     }
 
     @Override
@@ -37,5 +48,13 @@ public class Pari {
 
     public double getCote() {
         return this.cote;
+    }
+
+    public boolean getIsSurebet(){
+        return isSurebet;
+    }
+
+    public Pari[] getListeParisSurebet(){
+        return listeParisSurebet;
     }
 }

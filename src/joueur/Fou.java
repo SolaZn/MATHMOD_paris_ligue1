@@ -27,13 +27,13 @@ public class Fou extends Parieur {
 
         Collections.shuffle(listeChoix); // Collections.shuffle utilise l'aléatoire de rand (voir docu)
 
-        if(bankroll < 0){
-            if(idJourneeSansleSou.equals("")){
-                idJourneeSansleSou = match.getJournee();
+        if(bankroll - MISEMOYENNE < DECOUVERTAUTORISE){
+            if(idJourFin.equals("")){
+                idJourFin = match.getJournee();
             }
-            System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
+            /*System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
             System.out.println("Pas assez d'argent... Mise refusée");
-            System.out.println(this.getClass().getSimpleName() + " est à sec depuis " + this.idJourneeSansleSou);
+            System.out.println(this.getClass().getSimpleName() + " est à sec depuis " + this.idJourFin);*/
             return null;
         }
 
@@ -41,18 +41,15 @@ public class Fou extends Parieur {
         if(new Random().nextInt()%2 == 0) {
             if (listeChoix.get(0) == Choix.A) {
                 setBankroll(MISEMOYENNE);
-                nombreParisEffectues++;
-                nbAway++;
+                nbEff++;
                 return new Pari(this, match, Choix.A, match.getCotes().get(2), MISEMOYENNE);
             } else if (listeChoix.get(0) == Choix.D) {
                 setBankroll(MISEMOYENNE);
-                nbNul++;
-                nombreParisEffectues++;
+                nbEff++;
                 return new Pari(this, match, Choix.D, match.getCotes().get(1), MISEMOYENNE);
             } else if (listeChoix.get(0) == Choix.H) {
                 setBankroll(MISEMOYENNE);
-                nombreParisEffectues++;
-                nbHome++;
+                nbEff++;
                 return new Pari(this, match, Choix.H, match.getCotes().get(0), MISEMOYENNE);
             }
         }

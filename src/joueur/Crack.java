@@ -8,6 +8,13 @@ public class Crack extends Parieur {
         super();
     }
 
+    /*@Override
+    public void resetParieur() {
+        super.resetParieur();
+        bankrollMartingale = 0;
+        mise = -1;
+    }*/
+
     @Override
     public Pari parier(Match match) {
         return null;

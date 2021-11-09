@@ -17,7 +17,7 @@ public class JetSetteur extends Parieur {
         cotesMatch.addAll(match.getCotes());
 
         // on calcule le TRJ du pari
-        double TRJPari = calculTRJ(cotesMatch);
+        /* double TRJPari = calculTRJ(cotesMatch);*/
 
         Collections.sort(cotesMatch);
         Double coteChoisie = cotesMatch.get(2); // on récupère la dernière valeur, qui équivaut à la plus grosse
@@ -42,23 +42,23 @@ public class JetSetteur extends Parieur {
 
         double mise = MISEMOYENNE;
 
-        if(mise < 1  || bankroll < 0){
-            if(idJourneeSansleSou.equals("")){
-                idJourneeSansleSou = match.getJournee();
+        if(mise < 1  || bankroll - mise < DECOUVERTAUTORISE){
+            if(idJourFin.equals("")){
+                idJourFin = match.getJournee();
             }
-            System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
+            /*System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
             System.out.println("Pas assez d'argent... Mise refusée");
-            System.out.println(this.getClass().getSimpleName() + " est à sec depuis la " + this.idJourneeSansleSou);
+            System.out.println(this.getClass().getSimpleName() + " est à sec depuis la " + this.idJourFin);*/
             return null;
         }
 
         if(coteChoisie <= Parieur.GROSSECOTE){
-            System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
-            System.out.println("Cote pas assez risquée pour " + this.getClass().getSimpleName());
+            /*System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
+            System.out.println("Cote pas assez risquée pour " + this.getClass().getSimpleName());*/
             return null;
         }else{
             setBankroll(mise);
-            nombreParisEffectues++;
+            nbEff++;
             return new Pari(this, match, match.getChoixbyCote(coteChoisie), coteChoisie, mise);
         }
     }

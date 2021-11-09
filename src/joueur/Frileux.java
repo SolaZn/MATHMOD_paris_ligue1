@@ -33,25 +33,25 @@ public class Frileux extends Parieur {
         int temp = (int)(mise*100.0);
         mise = ((double)temp)/100.0; */
 
-        double mise = bankroll * 0.025;
-        if(mise < 1  || bankroll < 0){
-            if(idJourneeSansleSou.equals("")){
-                idJourneeSansleSou = match.getJournee();
+        double mise = MISEMOYENNE;
+        if(mise < 1  || bankroll - mise < DECOUVERTAUTORISE){
+            if(idJourFin.equals("")){
+                idJourFin = match.getJournee();
             }
-            System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
+            /*System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
             System.out.println("Pas assez d'argent... Mise refusée");
-            System.out.println(this.getClass().getSimpleName() + " est à sec " + this.idJourneeSansleSou);
+            System.out.println(this.getClass().getSimpleName() + " est à sec " + this.idJourFin);*/
             return null;
         }
 
 
         if(coteChoisie > Parieur.PETITECOTE){
-            System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
-            System.out.println("Cote trop risquée pour " + this.getClass().getSimpleName());
+            /*System.out.println(this.getClass().getSimpleName() + " n'a pas pu parier :<(");
+            System.out.println("Cote trop risquée pour " + this.getClass().getSimpleName());*/
             return null;
         }else {
             setBankroll(mise);
-            nombreParisEffectues++;
+            nbEff++;
             return new Pari(this, match, match.getChoixbyCote(coteChoisie), coteChoisie, mise);
         }
     }

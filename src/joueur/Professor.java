@@ -21,6 +21,13 @@ public class Professor extends Parieur {
 
     }
 
+    @Override
+    public void resetParieur() {
+        super.resetParieur();
+        bankrollMartingale = 0;
+        mise = -1;
+    }
+
     private double coefMultiplicateur(Choix choix, Match match){
         if(choix == Choix.A){
             return match.getCotes().get(2) / (match.getCotes().get(2) - 1);
@@ -59,13 +66,13 @@ public class Professor extends Parieur {
 
         appliquerMartingale(match, listeChoix.get(0));
 
-        if(bankroll < 0){
-            if(idJourneeSansleSou.equals("")){
-                idJourneeSansleSou = match.getJournee();
+        if(bankroll - mise < DECOUVERTMARTINGALE){
+            if(idJourFin.equals("")){
+                idJourFin = match.getJournee();
             }
-            System.out.println(this.getClass().getSimpleName() + " a du emprunter pour jouer :<)");
-            System.out.println(this.getClass().getSimpleName() + " est à sec depuis " + this.idJourneeSansleSou);
-            /* return null;             */
+            /*System.out.println(this.getClass().getSimpleName() + " a du emprunter pour jouer :<)");
+            System.out.println(this.getClass().getSimpleName() + " est à sec depuis " + this.idJourFin);*/
+            return null;
         }
 
 
@@ -73,19 +80,19 @@ public class Professor extends Parieur {
             if (listeChoix.get(0) == Choix.A) {
                 bankrollMartingale = bankroll;
                 setBankroll(mise);
-                nombreParisEffectues++;
+                nbEff++;
                 return new Pari(this, match, Choix.A, match.getCotes().get(2), mise);
             } else {
                 if (listeChoix.get(0) == Choix.D) {
                     bankrollMartingale = bankroll;
                     setBankroll(mise);
-                    nombreParisEffectues++;
+                    nbEff++;
                     return new Pari(this, match, Choix.D, match.getCotes().get(1), mise);
                 } else {
                     if (listeChoix.get(0) == Choix.H) {
                         bankrollMartingale = bankroll;
                         setBankroll(mise);
-                        nombreParisEffectues++;
+                        nbEff++;
                         return new Pari(this, match, Choix.H, match.getCotes().get(0), mise);
                     }
                 }
