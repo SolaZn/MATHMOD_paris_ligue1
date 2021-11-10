@@ -1,0 +1,10 @@
+
+ƒ
+java:S1319"hThe type of "cotesMAX" should be an interface such as "List" rather than the implementation "ArrayList".(Ç®Àµýÿÿÿÿ
+ƒ
+java:S1319"hThe type of "cotesAVG" should be an interface such as "List" rather than the implementation "ArrayList".(Ç®Àµýÿÿÿÿ
+‹
+java:S1319+"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(š†Âðøÿÿÿÿ
+†
+java:S1319U"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ŒŸãí
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç®Àµýÿÿÿÿ

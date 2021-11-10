@@ -1,0 +1,23 @@
+
+`
+java:S1854">Remove this useless assignment to local variable "technicien".(·‚Å€úÿÿÿÿ8‡âğ¼Ğ/
+Z
+java:S1854"8Remove this useless assignment to local variable "prof".(Âàæüÿÿÿÿ8©Ÿã¼Ğ/
+T
+java:S1854"7Remove this useless assignment to local variable "fou".(ªŸÀ·8šôâ¼Ğ/
+X
+java:S1854";Remove this useless assignment to local variable "frileux".(€¶–Ù8¥½á¼Ğ/
+T
+java:S1854"7Remove this useless assignment to local variable "jet".(…Íí©8šûá¼Ğ/
+E
+java:S1481"(Remove this unused "jet" local variable.(…Íí©8œûá¼Ğ/
+I
+java:S1481",Remove this unused "frileux" local variable.(€¶–Ù8¨½á¼Ğ/
+E
+java:S1481"(Remove this unused "fou" local variable.(ªŸÀ·8Ÿôâ¼Ğ/
+K
+java:S1481")Remove this unused "prof" local variable.(Âàæüÿÿÿÿ8¬Ÿã¼Ğ/
+Q
+java:S1481"/Remove this unused "technicien" local variable.(·‚Å€úÿÿÿÿ8‹âğ¼Ğ/
+W	java:S125"<This block of commented-out lines of code should be removed.(ØŸ78ûá¼Ğ/
+X	java:S125"<This block of commented-out lines of code should be removed.(âŸÙ8ìôğ¼Ğ/

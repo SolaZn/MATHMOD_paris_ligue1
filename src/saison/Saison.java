@@ -74,8 +74,7 @@ public class Saison {
         }
     }
 
-    private void exporterDonnees(Parieur parieur, int nbSaison){
-        parieur.export("Saison");
+    private void exporterDonnees(Parieur parieur){
     }
 
     // fonction de simulation de la saison
@@ -109,6 +108,7 @@ public class Saison {
         // 3 : on fait le bilan de la saison
         for(Parieur parieur : listeJoueurs){
             parieur.bilanSaison();
+            parieur.exporterDonnees("Saison");
         }
     }
 

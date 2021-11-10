@@ -1,0 +1,21 @@
+
+–
+java:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ìÕ¤~
+N	java:S106"9Replace this use of System.out or System.err by a logger.(§Î‚Ä
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(çº±ç
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(»¥©Ùüÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(İä½§
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(§úıÿÿÿÿ
+C
+java:S1172M".Remove this unused method parameter "parieur".(ìÕ¤~
+g
+java:S3776Q"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‡ßY
+G
+java:S5261Z"1Add explicit curly braces to avoid dangling else.(å¥‡
+N	java:S106x"9Replace this use of System.out or System.err by a logger.(Ïš¾õ
+S	java:S106{"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106|"9Replace this use of System.out or System.err by a logger.(‘“ë¯ıÿÿÿÿ
+m	java:S127="XRefactor the code in order to not assign to this loop counter from within the loop body.(‰ıÃğ
+‡
+java:S1319t"lThe type of "listeJoueurs" should be an interface such as "List" rather than the implementation "ArrayList".(«ïèïúÿÿÿÿ
+f	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êèÅ€

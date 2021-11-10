@@ -1,0 +1,9 @@
+
+Q
+java:S1854";Remove this useless assignment to local variable "TRJPari".(ø¦¹
+B
+java:S1481",Remove this unused "TRJPari" local variable.(ø¦¹
+V	java:S125"<This block of commented-out lines of code should be removed.(ÈËœ•şÿÿÿÿ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(â—Î©
+Q	java:S1251"<This block of commented-out lines of code should be removed.(â—Î©
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¦¹

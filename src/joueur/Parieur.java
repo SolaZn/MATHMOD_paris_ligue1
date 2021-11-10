@@ -10,10 +10,10 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public abstract class Parieur {
-    private static final String DELIMITEUR = ",";
+    private static final String DELIMITEUR = ":";
     private static final String SEPARATEUR = "\n";
-    private static final String CHAMPS = "Bankroll,Gain brut,Gain moyen,Total des mises, bénéfice, ROC, ROI,Journée d'arrêt,Victoires," +
-            "Défaites,Effectués,Pari domicile,Pari nul,Pari extérieur";
+    private static final String CHAMPS = "Parieur:Saison:Bankroll:Gain brut:Gain moyen:Total des mises:Bénéfice:ROC:ROI:Journée d'arrêt:Victoires:" +
+            "Défaites:Effectués:Pari domicile:Pari nul:Pari extérieur";
 
     double bankroll;
     double gainBrut;
@@ -38,6 +38,7 @@ public abstract class Parieur {
     int nbAway;
     int nbHome;
     int nbNul;
+    int nbSaisons;
 
     String idJourFin;
 
@@ -50,11 +51,10 @@ public abstract class Parieur {
         this.ROI = 0;
         this.totalMises = 0;
 
-
         nbAway=0;
         nbHome=0;
         nbNul=0;
-
+        this.nbSaisons = 1;
         this.nbEff = 0;
         this.nbVic = 0;
         this.nbDef = 0;
@@ -199,44 +199,59 @@ public abstract class Parieur {
         return bankroll;
     }
 
-    public void export(String saison) {
-        String nomFichier = this.getClass().getSimpleName() +".csv";
+    public void exporterDonnees(String saison) {
+        String nomFichier = "./csv/" + this.getClass().getSimpleName() +"1saisons.csv";
         FileWriter file;
         try
         {
-            file = new FileWriter(nomFichier);
-            if(lignesEcrites = 0) {
+
+            if(nbSaisons == 1) {
+                file = new FileWriter(nomFichier);
                 //Ajouter l'en-tête
                 file.append(CHAMPS);
+            }else{
+                file = new FileWriter(nomFichier, true);
             }
             //Ajouter une nouvelle ligne après l'en-tête
+
             file.append(SEPARATEUR);
             file.append(this.getClass().getSimpleName());
             file.append(DELIMITEUR);
-            file.append(String.valueOf(bankroll));
+            file.append(String.valueOf(nbSaisons));
             file.append(DELIMITEUR);
-            file.append(String.valueOf(gainBrut));
+            file.append(String.valueOf(nombre.format(bankroll)));
             file.append(DELIMITEUR);
-            file.append(String.valueOf(gainMatch));
+            file.append(String.valueOf(nombre.format(gainBrut)));
             file.append(DELIMITEUR);
-            file.append(String.valueOf(totalMises));
+            file.append(String.valueOf(nombre.format(gainMatch)));
             file.append(DELIMITEUR);
-            file.append(String.valueOf(bénéfice));
+            file.append(String.valueOf(nombre.format(totalMises)));
             file.append(DELIMITEUR);
-            file.append(String.valueOf(evolutionCapital));
+            file.append(String.valueOf(nombre.format(bénéfice)));
             file.append(DELIMITEUR);
-            file.append(String.valueOf(ROI));
+            file.append(String.valueOf(nombre.format(evolutionCapital)));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(nombre.format(ROI)));
             file.append(DELIMITEUR);
             file.append(String.valueOf(idJourFin)); // TODO: mettre J38 si pas de fin + changer le code qui vérifie les journées psk pas bon avec shuffle journees
-            //TODO: ajouter le reste des champs
-            file.append(SEPARATOR);
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(nombre.format(nbVic)));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(nombre.format(nbDef)));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(nombre.format(nbEff)));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(nombre.format(nbHome)));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(nombre.format(nbNul)));
+            file.append(DELIMITEUR);
+            file.append(String.valueOf(nombre.format(nbAway)));
 
             file.close();
+            nbSaisons++;
         }catch(Exception e)
         {
             e.printStackTrace();
         }
-    }
-
     }
 }

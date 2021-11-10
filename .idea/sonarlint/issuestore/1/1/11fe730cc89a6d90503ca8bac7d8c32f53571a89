@@ -1,0 +1,45 @@
+
+j	java:S116"URename this field "bÃ©nÃ©fice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òñ‚™
+h	java:S116"NRename this field "ROI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç­È‚úÿÿÿÿ
+O
+java:S5993-"9Change the visibility of this constructor to "protected".(ÆÑÇê
+W	java:S125‚"<This block of commented-out lines of code should be removed.(ç¬Ïñÿÿÿÿÿ
+Q	java:S125ˆ"<This block of commented-out lines of code should be removed.(ó”¹8
+R	java:S125"<This block of commented-out lines of code should be removed.(®Ô®Þ
+N	java:S106–"9Replace this use of System.out or System.err by a logger.(˜ù€V
+T	java:S106—"9Replace this use of System.out or System.err by a logger.(Ä…Æíüÿÿÿÿ
+T	java:S106™"9Replace this use of System.out or System.err by a logger.(Üïì„ýÿÿÿÿ
+O	java:S106›"9Replace this use of System.out or System.err by a logger.(„îÎ
+C
+java:S1872œ"'Use an "instanceof" comparison instead.(Þàÿãüÿÿÿÿ
+C
+java:S1872œ"'Use an "instanceof" comparison instead.(Þàÿãüÿÿÿÿ
+=
+java:S1872"'Use an "instanceof" comparison instead.(Þ®Ç:
+T	java:S106ž"9Replace this use of System.out or System.err by a logger.(‚°¤ûÿÿÿÿ
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(ŸüÍþÿÿÿÿ
+T	java:S106©"9Replace this use of System.out or System.err by a logger.(ñÄ±Æùÿÿÿÿ
+T	java:S106ª"9Replace this use of System.out or System.err by a logger.(¼Å’èúÿÿÿÿ
+T	java:S106«"9Replace this use of System.out or System.err by a logger.(ý§Ç¥þÿÿÿÿ
+T	java:S106¬"9Replace this use of System.out or System.err by a logger.(›·Œ³úÿÿÿÿ
+O	java:S106®"9Replace this use of System.out or System.err by a logger.(Ô•Ùé
+O	java:S106¯"9Replace this use of System.out or System.err by a logger.(¶´œÏ
+N	java:S106°"9Replace this use of System.out or System.err by a logger.(ÖüËJ
+I
+java:S1135²"2Complete the task associated to this TODO comment.(ÈÑÿ
+N
+java:S1135µ"2Complete the task associated to this TODO comment.(Ù€ð§úÿÿÿÿ
+i	java:S100À"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÐ¿¿úÿÿÿÿ
+I
+java:S1172Ê"-Remove this unused method parameter "saison".(•Ð¦¬ûÿÿÿÿ
+N
+java:S1135ì"2Complete the task associated to this TODO comment.(—Ú‡Óüÿÿÿÿ
+^
+java:S1192®"GDefine a constant instead of duplicating this literal " euros" 3 times.(Ô•Ùé
+f	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¯ˆ‡
+S
+java:S4973˜"<Strings and Boxed types should be compared using "equals()".(„Ðš¥
+_
+java:S2095Õ"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(¶ïìÈ
+_
+java:S2095Ñ"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(á›ºÖ

@@ -1,0 +1,12 @@
+
+J
+java:S3740L"/Provide the parametrized type for this generic.(ˆ™¿õÿÿÿÿÿ
+c	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªï‘è
+h	java:S100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É„³üÿÿÿÿ
+W
+java:S1126<"AReplace this if-then-else statement by a single return statement.(†¹ô
+m
+java:S3776I"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(šÂ½´ùÿÿÿÿ
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(ó²ùõ
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(›­«ø
+V	java:S125n"<This block of commented-out lines of code should be removed.(“ìÂÆùÿÿÿÿ

@@ -2,6 +2,7 @@ package saison;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Match {
     private int idMatch;
@@ -32,6 +33,7 @@ public class Match {
 
     public void resetMatch(){
          listeParis = new ArrayList<>();
+         Collections.shuffle(cotesAVG);
     }
 
     public Match getMatch(){
